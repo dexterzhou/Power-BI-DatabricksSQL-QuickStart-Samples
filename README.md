@@ -5,7 +5,7 @@
 ---
 
 
-# Power BI on Databricks SQL - QuickStarts
+# :bookmark: Power BI on Databricks SQL - QuickStarts :rocket:
 
 
 ## Introduction
