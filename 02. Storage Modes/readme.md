@@ -33,7 +33,7 @@ For our testing scenario we use a **Small** Pro SQL Warehouse. We will create re
    - **Server Hostname**: Enter the Server hostname value from Databricks SQL Warehouse connection details tab.
    - **HTTP Path**: Enter the HTTP path value  from Databricks SQL Warehouse connection details tab.
 
-   <img width="600" src="./images/01-1.png" alt="Azure Databricks connection" />
+   <img width="600" src="./images/DatabricksConnection.png" alt="Azure Databricks connection" />
 
 > [!TIP]
 > We recommend parameterizing your connections. This really helps ease out the Power BI development and administration expeience as you can easily switch between different environments, i.e., Databricks Workspaces and SQL Warehouses. For details on how to paramterize your connection string, you can refer to [Connection Parameters](/01.%20Connection%20Parameters/) article.
