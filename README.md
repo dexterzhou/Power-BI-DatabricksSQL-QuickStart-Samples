@@ -5,7 +5,7 @@
 ---
 
 
-# :bookmark: :memo: :receipt: Power BI on Databricks SQL - QuickStarts :rocket:
+# :bookmark: :memo: :receipt: :clipboard: Power BI on Databricks SQL - QuickStarts :rocket:
 
 
 ## Introduction
