@@ -12,21 +12,21 @@ USE SCHEMA tpch;
 -- 2. Create test tables
 -- =====================================================================================================================
 
-CREATE OR REPLACE TABLE region AS SELECT * FROM samples.tpch.region;
 CREATE OR REPLACE TABLE nation AS SELECT * FROM samples.tpch.nation;
 CREATE OR REPLACE TABLE customer AS SELECT * FROM samples.tpch.customer;
-CREATE OR REPLACE TABLE part AS SELECT * FROM samples.tpch.part;
 CREATE OR REPLACE TABLE orders AS SELECT * FROM samples.tpch.orders;
 CREATE OR REPLACE TABLE lineitem AS SELECT * FROM samples.tpch.lineitem;
 
-CREATE OR REPLACE VIEW orders_transformed AS
-SELECT o_orderkey, o_custkey, o_orderstatus, o_totalprice, o_orderdate, o_orderpriority, o_clerk, o_shippriority
-    , max(if(p_container='SM BAG', 1, 0)) AS sm_bag
-    , max(if(p_container='MED BAG', 1, 0)) AS med_bag
-    , max(if(p_container='LG BAG', 1, 0)) AS lg_bag
-FROM orders
-    JOIN lineitem on o_orderkey=l_orderkey
-    JOIN part on l_partkey=p_partkey
+CREATE OR REPLACE TABLE lineitem_by_nation_agg AS
+SELECT
+  `n_nationkey`
+  , min(`l_shipdate`) as `EarliestShipdate`
+  , sum(`l_discount`) as `SumofDiscount`
+  , sum(`l_quantity`) as `SumOfQuantity`
+FROM `samples`.`tpch`.`lineitem` 
+  INNER JOIN `samples`.`tpch`.`orders` on `l_orderkey` = `o_orderkey`
+  INNER JOIN `samples`.`tpch`.`customer` on `o_custkey` = `c_custkey`
+  INNER JOIN `samples`.`tpch`.`nation` on `c_nationkey` = `n_nationkey`
 GROUP BY ALL;
 
 

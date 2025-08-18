@@ -68,11 +68,11 @@ The following grid outlines the scenarios tested and the results for each test. 
 
 |Scenario| VM Configuration |
 | ------ | ---------------- |
-| D | Standard E8bds v5 (8 vcpus, 64 GiB memory) [NVMe, Accelerated Networking], C Drive default (Premium SSD LRS 127 GiB) | 
-| E | Standard E8bds v5 (8 vcpus, 64 GiB memory) [NVMe, Accelerated Networking], C Drive default (Premium SSD LRS 127 GiB) | 
-| F | Standard E8bds v5 (8 vcpus, 64 GiB memory) [NVMe, Accelerated Networking], C Drive default (Premium SSD LRS 127 GiB) | 
-| G | Standard E8bds v5 (8 vcpus, 64 GiB memory) [NVMe, Accelerated Networking], D drive | 
-| H | Standard E8bds v5 (8 vcpus, 64 GiB memory) [NVMe, Accelerated Networking], E Drive (Premium SSD LRS 600 GiB) | 
+| D | Standard E8bds v5 (8 vcpus, 64 GiB memory), NVMe, Accelerated Networking, C Drive default (Premium SSD LRS 127 GiB) | 
+| E | Standard E8bds v5 (8 vcpus, 64 GiB memory), NVMe, Accelerated Networking, C Drive default (Premium SSD LRS 127 GiB) | 
+| F | Standard E8bds v5 (8 vcpus, 64 GiB memory), NVMe, Accelerated Networking, C Drive default (Premium SSD LRS 127 GiB) | 
+| G | Standard E8bds v5 (8 vcpus, 64 GiB memory), NVMe, Accelerated Networking, D drive | 
+| H | Standard E8bds v5 (8 vcpus, 64 GiB memory), NVMe, Accelerated Networking, E Drive (Premium SSD LRS 600 GiB) | 
 | I | Standard D8s v3 (8 vcpus, 32 GiB memory), C Drive default (Premium SSD LRS 127 GiB) | 
 | J | Standard D8s v3 (8 vcpus, 32 GiB memory), C Drive default (Premium SSD LRS 127 GiB) | 
 
